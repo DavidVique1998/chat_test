@@ -1,0 +1,53 @@
+{
+  "name": "api_chat_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "dev": "nodemon src/index.js",
+    "pm2": "pm2 start src/index.js --name=hapi-test --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/basic": "^7.0.2",
+    "@hapi/boom": "^10.0.1",
+    "@hapi/hapi": "^21.3.10",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "@hapi/vision": "^7.0.3",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "hapi-swagger": "^17.2.1",
+    "joi": "^17.13.3",
+    "knex": "^3.1.0",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "node-libcurl": "^4.0.0",
+    "objection": "^3.1.4",
+    "openai": "^4.52.2",
+    "pg": "^8.12.0",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "blipp": "^4.0.2",
+    "git-cz": "^4.9.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "nodemon": "^3.1.4",
+    "pm2": "^5.4.1",
+    "prettier-eslint": "^16.3.0",
+    "prettier-eslint-cli": "^8.0.1"
+  }
+}
